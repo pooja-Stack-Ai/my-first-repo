@@ -1,0 +1,39 @@
+# Basic calculator using different operators in two ways:
+1. num1= float (input( "Enter your first number: " ))    
+num2= float (input( "Enter your second number: ")) 
+operations = {
+    "+": num1 + num2,
+    "-": num1 - num2,
+    "*": num1 * num2,
+    "/": num1/ num2 }
+operation = input("Enter operation (+, -, *, /): ")
+result = operations.get(operation, "Invalid operation")
+
+# Step 5: Show result
+print("Result:", result)
+
+#print ("sum :")
+#print ("difference is:")
+#print ( "multiplication is : ")
+#print ("division is: ")
+
+2.num1= int(input( "enter your first number: "))
+num2= int(input( "enter your second number: "))
+operation = input("Enter the operation (+, -, *, /): ")
+if operation == "+":
+   result = num1 +num2
+   print (f"{num1} + {num2} = {result}")
+elif operation == "-":
+  result = num1 - num2
+  print( f"{num1}- {num2}= {result}")
+elif operation == "*":
+  result = num1 * num2
+  print ( f"{num1} * {num2}= {result}")
+elif operation == "/":
+  result = num1 / num2
+  print(f"{num1} / {num2} = {result}")
+else:
+    print("Invalid operation. Please enter +, -, *, or /.")
+
+
+
